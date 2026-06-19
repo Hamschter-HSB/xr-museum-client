@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Sound Code Viewer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Retro Sound Viewer</h1>
+            <p>Scan successful. Generating code...</p>
+        </header>
+
+        <main>
+            <div class="controls">
+                <label for="computer-select">Select Computer:</label>
+                <div class="select-wrapper">
+                    <select id="computer-select">
+                        <option value="ti994a">TI-99/4A</option>
+                        <option value="c64">Commodore 64</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="code-container">
+                <h2>BASIC Code</h2>
+                <textarea id="output" readonly></textarea>
+                <button id="copy-btn" class="btn">Copy Code</button>
+            </div>
+            
+            <div id="error-msg" class="error hidden">
+                Invalid or missing sound data in URL.
+            </div>
+        </main>
+        
+        <footer>
+            <p>8-Bit Sound Generator</p>
+        </footer>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
