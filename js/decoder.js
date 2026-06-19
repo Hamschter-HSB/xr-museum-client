@@ -5,10 +5,10 @@ export function decodeUrlData() {
     if (!dataParam) return null;
     
     try {
-        // Format: duration;f1,v1;f2,v2;f3,v3;n_en,n_type,n_vol|next_step...
-        const stepsData = dataParam.split('|');
+        // Format: duration-f1,v1-f2,v2-f3,v3-n_en,n_type,n_vol_next_step...
+        const stepsData = dataParam.split('_');
         return stepsData.map(stepStr => {
-            const parts = stepStr.split(';');
+            const parts = stepStr.split('-');
             if (parts.length < 5) throw new Error("Invalid step format");
             
             const duration = parseInt(parts[0], 10);
