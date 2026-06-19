@@ -1,5 +1,5 @@
 export function generateTI994A(steps) {
-    let code = "100 REM TI-99/4A SOUND PROGRAMM\n";
+    let code = "NEW\n";
 
     steps.forEach((step, index) => {
         const line = 110 + index * 10;
@@ -22,6 +22,6 @@ export function generateTI994A(steps) {
         }
     });
 
-    code += `${110 + steps.length * 10} END\n`;
+    code += `${110 + steps.length * 10} END\nRUN\n`;
     return code;
 }

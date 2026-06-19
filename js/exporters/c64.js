@@ -1,5 +1,5 @@
 export function generateC64(steps) {
-    let code = "10 REM COMMODORE 64 SOUND PROGRAMM\n";
+    let code = "NEW\n";
     code += "20 S=54272: FOR I=0 TO 24: POKE S+I,0: NEXT I\n";
     code += "30 POKE S+24,15 : REM MAX VOLUME\n";
 
@@ -52,6 +52,6 @@ export function generateC64(steps) {
         }
     });
 
-    code += `${line} END\n`;
+    code += `${line} END\nRUN\n`;
     return code;
 }
