@@ -3,6 +3,9 @@ This Page is static and currently hosted on github pages.
 
 This can be hosted on the OCM website. Make sure to replace the url in the server application.
 
+<img width="811" height="821" alt="OCM - Soundgenerator - Sourcecode of the client" src="https://github.com/user-attachments/assets/108876c0-26b0-4de0-b68b-3c98ef536827" />
+
+
 ## FAQ - For further usage in OCM
 ### How to add new computers to generate code for the exporter?
 1. Exporter-Skript erstellen
