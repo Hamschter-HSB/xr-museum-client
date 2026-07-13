@@ -9,7 +9,7 @@
 export function generateExample(steps) {
     // 1. Initialisiere den Code-String. Viele BASIC-Scripte starten z. B. mit NEW.
     let code = "NEW\n";
-    code += "10 REM BEISPIEL COMPUTER SOUND PROGRAMM\n";
+    code += "10 REM MYSOUND\n";
 
     // Startzeile für den generierten Code
     let line = 20;
